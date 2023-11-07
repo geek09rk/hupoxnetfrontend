@@ -1,0 +1,25 @@
+@import '../../scss/colors.scss';
+@import '../../scss/globals';
+
+
+.infot{
+    font-size: 1.4rem;
+    text-align: left;
+    color: #cc5f5f;
+    font-weight:bold;
+}
+
+.infoh{
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.footer{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.imk{
+    max-width: 800px;
+    align-items: center;
+}
