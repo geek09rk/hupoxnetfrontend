@@ -2,7 +2,8 @@ import React from "react";
 import "bootstrap";
 import { Divider, Radio, Checkbox, Button } from "antd";
 import "antd/dist/reset.css"
-import "antd/dist/antd.min.css";
+// import "antd/dist/antd.min.css";
+import 'antd/dist/reset.css';
 import "./Interactome.scss";
 import { InfoCircleOutlined} from "@ant-design/icons";
 import axios from "axios";
