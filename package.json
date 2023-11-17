@@ -31,7 +31,7 @@
     "start": "react-dotenv && react-scripts start",
     "local": "serve -s build -l 3860",
     "build": "react-dotenv && react-scripts build",
-    "update": "git pull origin main && npm i && react-scripts build && react-dotenv && pm2 restart hupoxnetfrontend",
+    "update": "git pull origin master && npm i && react-scripts build && react-dotenv && pm2 restart hupoxnetfrontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
