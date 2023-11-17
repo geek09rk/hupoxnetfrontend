@@ -146,7 +146,7 @@ export default class GO extends React.Component {
           <input
             className="form-control"
             type="text"
-            placeholder="IPR014048, Pfam"
+            placeholder="Search example: IPR014048, Pfam"
             value={searchQuery}
             onChange={(e) => this.handleSearch(e.target.value)}
           />

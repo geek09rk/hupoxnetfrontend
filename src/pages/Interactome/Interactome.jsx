@@ -15,7 +15,6 @@ const interologOptions = [
   "HPIDB",
   "DIP",
   "MINT",
-  // "STRING",
   "BioGRID",
   "IntAct",
   "VirHostNet",
@@ -23,7 +22,7 @@ const interologOptions = [
 
 const domainOptions = ["3DID", "IDDI", "DOMINE"];
 
-const interologCheckedList = ["HPIDB", "MINT"];
+const interologCheckedList = ["HPIDB", "MINT", "VirHostNet"];
 const domainCheckedList = ["3DID", "IDDI"];
 
 export default class Interactome extends React.Component {
@@ -393,18 +392,6 @@ export default class Interactome extends React.Component {
 
         <div className="row flex-lg-row align-items-center">
           {this.state.interactomeType !== "cinteractome" && (
-            // <div className="col-md-4">
-            //   <h5>Select Pathogen Species</h5>
-            //   <Radio.Group name="radiogroup" defaultValue={"dqs"}>
-            //     <Radio value="dqs" onChange={this.speciesHandler}>
-            //       <i>MPXV strain 1</i>
-            //     </Radio>
-            //     <Radio value="turgidums" onChange={this.speciesHandler}>
-            //       <i>MPXV strain 2</i>
-            //     </Radio>
-            //   </Radio.Group>
-            // </div>
-
             <div className="col-md-4">
               <h5>Select Pathogen Strain</h5>
               <select className="form-select" value={this.state.species} onChange={this.speciesHandler}>

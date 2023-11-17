@@ -142,86 +142,86 @@ export default class Datasets extends React.Component {
                               <tr>
                                 <th style={{ padding: '10px' }}>NCBI Accession</th>
                                 <th style={{ padding: '10px' }}>Link</th>
-                                <th style={{ padding: '10px' }}>Pathogen</th>
-                                <th style={{ padding: '10px' }}>Host</th>
                                 <th style={{ padding: '10px' }}>Interactions</th>
+                                <th style={{ padding: '10px' }}>Host</th>
+                                <th style={{ padding: '10px' }}>Pathogen</th>                        
                               </tr>
                               <tr>
                                 <td>DQ011157</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/DQ011157/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>121</td>
-                                <td>8,117</td>
                                 <td>105,068</td>
+                                <td>8,117</td>
+                                <td>121</td>
                               </tr>
                               <tr>
                                 <td>JX878409</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/JX878409/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>121</td>
-                                <td>8,018</td>
                                 <td>100,274</td>
+                                <td>8,018</td>
+                                <td>121</td>
                               </tr>
                               <tr>
                                 <td>JX878425</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/JX878425/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>120</td>
-                                <td>7,990</td>
                                 <td>99,132</td>
+                                <td>7,990</td>
+                                <td>120</td>
                               </tr>
                               <tr>
                                 <td>JX878428</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/JX878428/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>121</td>
-                                <td>8,008</td>
                                 <td>99,479</td>
+                                <td>8,008</td>
+                                <td>121</td>
                               </tr>
                               <tr>
                                 <td>KJ642615</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/KJ642615/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>8,075</td>
                                 <td>90,200</td>
+                                <td>8,075</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>MN648051</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MN648051/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>126</td>
-                                <td>8,088</td>
                                 <td>97,943</td>
+                                <td>8,088</td>
+                                <td>126</td>
                               </tr>
                               <tr>
                                 <td>MN702444</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MN702444/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>107</td>
-                                <td>7,964</td>
                                 <td>87,643</td>
+                                <td>7,964</td>
+                                <td>107</td>
                               </tr>
                               <tr>
                                 <td>MT903340</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MT903340/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,968</td>
                                 <td>86,555</td>
+                                <td>7,968</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>MT903342</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MT903342/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,968</td>
                                 <td>86,555</td>
+                                <td>7,968</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>MT903343</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MT903343/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,968</td>
                                 <td>86,555</td>
+                                <td>7,968</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>MT903344</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MT903344/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,968</td>
                                 <td>86,555</td>
+                                <td>7,968</td>
+                                <td>110</td>
                               </tr>
                             </table>
                           </div>
@@ -230,86 +230,86 @@ export default class Datasets extends React.Component {
                               <tr>
                                 <th style={{ padding: '10px' }}>NCBI Accession</th>
                                 <th style={{ padding: '10px' }}>Link</th>
-                                <th style={{ padding: '10px' }}>Pathogen</th>
-                                <th style={{ padding: '10px' }}>Host</th>
                                 <th style={{ padding: '10px' }}>Interactions</th>
+                                <th style={{ padding: '10px' }}>Host</th>
+                                <th style={{ padding: '10px' }}>Pathogen</th>
                               </tr>
                               <tr>
                                 <td>MT903345</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/MT903345/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,968</td>
                                 <td>86,555</td>
+                                <td>7,968</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>NC_003310</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/NC_003310/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>121</td>
-                                <td>7,998</td>
                                 <td>98,827</td>
+                                <td>7,998</td>
+                                <td>121</td>
                               </tr>
                               <tr>
                                 <td>ON563414</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/ON563414/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>117</td>
-                                <td>8,076</td>
                                 <td>93,265</td>
+                                <td>8,076</td>
+                                <td>117</td>
                               </tr>
                               <tr>
                                 <td>ON736420</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/ON736420/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>127</td>
-                                <td>8,081</td>
                                 <td>96,960</td>
+                                <td>8,081</td>
+                                <td>127</td>
                               </tr>
                               <tr>
                                 <td>ON745215</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/ON745215/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>117</td>
-                                <td>8,076</td>
                                 <td>93,265</td>
+                                <td>8,076</td>
+                                <td>117</td>
                               </tr>
                               <tr>
                                 <td>ON872184</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/ON872184/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>92</td>
-                                <td>7,900</td>
                                 <td>73,414</td>
+                                <td>7,900</td>
+                                <td>92</td>
                               </tr>
                               <tr>
                                 <td>OP019275</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/OP019275/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,976</td>
                                 <td>85,374</td>
+                                <td>7,976</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>OP022170</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/OP022170/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,976</td>
                                 <td>85,374</td>
+                                <td>7,976</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>OP160532</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/OP160532/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,976</td>
                                 <td>85,374</td>
+                                <td>7,976</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>OP215228</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/OP215228/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>110</td>
-                                <td>7,976</td>
                                 <td>85,374</td>
+                                <td>7,976</td>
+                                <td>110</td>
                               </tr>
                               <tr>
                                 <td>OP245306</td>
                                 <td><a href='https://www.ncbi.nlm.nih.gov/nuccore/OP245306/' rel="noreferrer" target="_blank">Click here</a></td>
-                                <td>106</td>
-                                <td>7,874</td>
                                 <td>78,364</td>
+                                <td>7,874</td>
+                                <td>106</td>
                               </tr>
                             </table>
                           </div>

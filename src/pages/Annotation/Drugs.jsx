@@ -110,7 +110,7 @@ export default class GO extends React.Component {
           <input
             className="form-control"
             type="text"
-            placeholder="Cetuximab, P05121"
+            placeholder="Search example: Cetuximab, P05121"
             value={searchQuery}
             onChange={this.handleSearchChange}
           />
