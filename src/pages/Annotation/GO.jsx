@@ -234,7 +234,7 @@ export default class GO extends React.Component {
         <Table responsive className="go-table table-borderless">
           <thead className="go-thead">
             <tr>
-              <th>Human Protein</th>
+              <th>Protein ID</th>
               <th>GO Accession</th>
               <th>Term</th>
               <th>Definition</th>

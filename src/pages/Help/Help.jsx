@@ -17,7 +17,7 @@ export default class Help extends React.Component {
                     </p>
                     <p className="infoh">
                         This is the tutorial page of HuPoxNET and will guide you through the database and its applicability. In case of any questions, contact 
-                        <a href= "mailto:raghav.kataria09@gmail.com"> Raghav Kataria</a>.
+                        <a href= "mailto:raghav.kataria@usu.edu"> Raghav Kataria</a>.
                         The figure below shows the 'Homepage' of HuPoxNET, from where the user can navigate to the various functional annotations of 
                         the database, interactome prediction tool, and access the available datasets.
                     </p>
