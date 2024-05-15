@@ -126,6 +126,9 @@ export default class GO extends React.Component {
               <th>Drug (common name)</th>
               <th>Gene name</th>
               <th>GenBank</th>
+              <th>ChEMBL ID</th>
+              <th>ChEMBL Description</th>
+              <th>Protein type</th>
             </tr>
           </thead>
           <tbody>
@@ -167,6 +170,17 @@ export default class GO extends React.Component {
                   {result["genbank_id"]}
                   </a>
                 </td>
+
+                <td>
+                  <a href={`https://www.ebi.ac.uk/chembl/compound_report_card/${result['ChEMBLID']}`} target="_blank"
+                          rel="noreferrer">
+                  {result["ChEMBLID"]}
+                  </a>
+                </td>
+
+                <td>{result["ChEMBL_Name"]}</td>
+
+                <td>{result["ProteinType"]}</td>
               
               </tr>
             ))}
