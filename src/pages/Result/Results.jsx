@@ -262,7 +262,7 @@ export default class Results extends React.Component {
           <>
           <th>Method</th>
           <th>Type</th>
-          <th>Confidence</th>
+          <th>Confidence Score</th>
           <th>PMID</th>
           </>
 )}
@@ -272,7 +272,7 @@ export default class Results extends React.Component {
           <th>InteractorA Interpro</th>
           <th>InteractorB Name</th>
           <th>InteractorB Interpro</th>
-          <th>Confidence</th>
+          <th>Confidence Score</th>
           </>
 )}
         </tr>
@@ -565,7 +565,7 @@ export default class Results extends React.Component {
           <th>InteractorA Interpro</th>
           <th>InteractorB Name</th>
           <th>InteractorB Interpro</th>
-          <th>Confidence</th>
+          <th>Confidence Score</th>
          
         </tr>
       </thead>
