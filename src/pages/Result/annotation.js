@@ -310,8 +310,8 @@ export default class ANNOT extends React.Component {
  
                 {this.state.ishost && (
                     <div className="row justify-content-center">
-                            <h5>Host protein: &nbsp;&nbsp;&nbsp; {hid} </h5>
-                            <Divider />
+                            {/* <h5>Host protein: &nbsp;&nbsp;&nbsp; {hid} </h5>
+                            <Divider /> */}
                             <h5><b>Gene Ontology</b></h5>
                             {geneontology}
                             <Divider />
