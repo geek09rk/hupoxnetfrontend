@@ -166,21 +166,71 @@ export default class ANNOT extends React.Component {
 
 
         let hostdrugs;
-        if (this.state.htf && this.state.htf.length !== 0) {
+        if (this.state.hdrugs && this.state.hdrugs.length !== 0) {
             hostdrugs = (
                 <Table responsive className="kbl-table table-borderless">
                     <thead className="kbl-thead">
                         <tr>
-                            <th>Protein ID</th>
-                            <th>Drug Name</th>
+                        <th>Human Protein</th>
+                        <th>DrugBank</th>
+                        <th>Drug (common name)</th>
+                        <th>Gene name</th>
+                        <th>GenBank</th>
+                        <th>ChEMBL ID</th>
+                        <th>ChEMBL Description</th>
+                        <th>Protein type</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {this.state.hdrugs.map((go, index) => (
+                        {this.state.hdrugs.map((result, index) => (
                             <>
                                 <tr key={index + 1}>
-                                    <td>{go.protein_id}</td>
-                                    <td>{go.drug_id}</td>
+                                <td>
+                                    <a
+                                        href={`https://www.uniprot.org/uniprotkb/${result["protein_id"]}/entry`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {result["protein_id"]}
+                                    </a>
+                                    </td>
+
+                                    <td>
+                                    <a
+                                        href={`https://go.drugbank.com/drugs/${result["drug_id"]}`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {result["drug_id"]}
+                                    </a>
+                                    </td>
+
+                                    <td>{result["common_name"]}</td>
+
+                                    <td>
+                                    <a href={`https://www.ncbi.nlm.nih.gov/search/all/?term=${result['gene_name']}`} target="_blank"
+                                        rel="noreferrer">
+                                        {result["gene_name"]}
+                                    </a>
+                                    </td>
+
+                                    <td>
+                                    <a href={`https://www.ncbi.nlm.nih.gov/search/all/?term=${result['genbank_id']}`} target="_blank"
+                                            rel="noreferrer">
+                                    {result["genbank_id"]}
+                                    </a>
+                                    </td>
+
+                                    <td>
+                                    <a href={`https://www.ebi.ac.uk/chembl/compound_report_card/${result['ChEMBLID']}`} target="_blank"
+                                            rel="noreferrer">
+                                    {result["ChEMBLID"]}
+                                    </a>
+                                    </td>
+
+                                    <td>{result["ChEMBL_Name"]}</td>
+
+                                    <td>{result["ProteinType"]}</td>
                                 </tr>
                             </>
 
@@ -197,7 +247,7 @@ export default class ANNOT extends React.Component {
         }
 
         let hostinterpro;
-        if (this.state.hint && this.state.hint.length !== 0) {
+        if (this.state.hinter && this.state.hinter.length !== 0) {
             hostinterpro = (
                 <Table responsive className="kbl-table table-borderless">
                     <thead className="kbl-thead">
