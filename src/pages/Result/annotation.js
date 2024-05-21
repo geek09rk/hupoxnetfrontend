@@ -312,19 +312,19 @@ export default class ANNOT extends React.Component {
                     <div className="row justify-content-center">
                             <h5>Host protein: &nbsp;&nbsp;&nbsp; {hid} </h5>
                             <Divider />
-                            <h5>Gene Ontology</h5>
+                            <h5><b>Gene Ontology</b></h5>
                             {geneontology}
                             <Divider />
-                            <h5>KEGG Pathway</h5>
+                            <h5><b>KEGG Pathway</b></h5>
                             {hostkegg}
                             <Divider />
-                            <h5>Subcellular Localization</h5>
+                            <h5><b>Subcellular Localization</b></h5>
                             {hostlocal}
                             <Divider />
-                            <h5>Drug Targets</h5>
+                            <h5><b>Drug Targets</b></h5>
                             {hostdrugs}
                             <Divider />
-                            <h5>Functional Domains</h5>
+                            <h5><b>Functional Domains</b></h5>
                             {hostinterpro}
                             <Divider />
                         </div>
