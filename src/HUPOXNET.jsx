@@ -10,6 +10,7 @@ import Local from './pages/Annotation/Local';
 import Drugs from './pages/Annotation/Drugs';
 import Interactome from './pages/Interactome/Interactome';
 import Results from './pages/Result/Results';
+import ANNOT from 'pages/Result/annotation';
 import VisPage from './pages/VisPage/VisPage';
 import Datasets from './pages/Datasets/Datasets';
 import Help from './pages/Help/Help';
@@ -66,6 +67,9 @@ export class HUPOXNET extends Component{
                     </Route>
 
                     <Route path={`${env.BASE_URL}/drugs/`}  element={<Drugs />}>
+                    </Route>
+
+                    <Route path={`${env.BASE_URL}/annotation/`}  element={<ANNOT />}>
                     </Route>
 
                 </Routes>

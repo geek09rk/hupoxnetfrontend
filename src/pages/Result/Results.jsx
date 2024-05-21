@@ -253,6 +253,7 @@ export default class Results extends React.Component {
           </th>
 
           <th>Host</th>
+          <th>Annotation</th>
           <th>Gene Expression</th>
           <th>Pathogen</th>
           <th>InteractorA</th>
@@ -308,6 +309,17 @@ export default class Results extends React.Component {
                 className="host"
               >
                 {result["Host_Protein"]}
+              </a>
+            </td>
+
+            <td>
+            <a
+                href={`${env.BASE_URL}/annotation/?hid=${result["Host_Protein"]}`}
+                target="_blank"
+                rel="noreferrer"
+                className="button"
+              >
+              <Button type="primary" shape="round"  size={'small'}>View</Button>
               </a>
             </td>
             
@@ -557,6 +569,7 @@ export default class Results extends React.Component {
           </th>
 
           <th>Host</th>
+          <th>Annotation</th>
           <th>Pathogen</th>
           <th>InteractorA</th>
           <th>InteractorB</th>
@@ -603,6 +616,18 @@ export default class Results extends React.Component {
                 {result["Host_Protein"]}
               </a>
             </td>
+
+            <td>
+            <a
+                href={`${env.BASE_URL}/annotation/?hid=${result["Host_Protein"]}`}
+                target="_blank"
+                rel="noreferrer"
+                className="button"
+              >
+              <Button type="primary" shape="round"  size={'small'}>View</Button>
+              </a>
+            </td>
+            
             <td>
               <a
                 href={`https://www.ncbi.nlm.nih.gov/search/all/?term=${result["Pathogen_Protein"]}%09`}
