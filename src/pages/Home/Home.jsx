@@ -4,7 +4,6 @@ import { Divider} from "antd";
 import Dropdown from 'react-bootstrap/Dropdown';
 import "../../scss/components/buttons.scss";
 import "./Home.scss";
-// import lablogo from '../../components/TNavbar/lab_logo_red.png';
 import CookieConsent from "react-cookie-consent";
 export default class Home extends React.Component {
   constructor(props) {
@@ -412,7 +411,7 @@ export default class Home extends React.Component {
           <p>
             &copy; 2023 |&nbsp;{" "}
             <a
-              href="https://bioinfo.usu.edu"
+              href="https://kaabil.net"
               target="_blank"
               rel="noopener noreferrer"
             >

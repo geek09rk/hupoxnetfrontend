@@ -208,7 +208,7 @@ export default class GO extends React.Component {
           <p>
             &copy; 2023 |&nbsp;{" "}
             <a
-              href="https://bioinfo.usu.edu"
+              href="https://kaabil.net"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -3,7 +3,7 @@ import "./GO.scss";
 import '../../scss/style.scss';
 import axios from "axios";
 import Table from "react-bootstrap/Table";
-import { Divider } from "antd";
+import { Divider, Button } from "antd";
 import { env } from '../../env';
 import test from '../Interactome/test.gif'
 const urlParams = new URLSearchParams(window.location.search);
@@ -48,13 +48,11 @@ export default class ANNOT extends React.Component {
                     hinter: res.data.hinter,
                 })
                 this.closeModel()
-
             })
     }
 
 
     componentDidMount() {
-
         this.fetchAnnotations();
     }
 
@@ -75,8 +73,24 @@ export default class ANNOT extends React.Component {
                         {this.state.hgo.map((go, index) => (
                             <>
                                 <tr key={index + 1}>
-                                    <td>{go.gene}</td>
-                                    <td>{go.term}</td>
+                                    <td>
+                                        <a
+                                        href={`https://www.uniprot.org/uniprotkb/${go.gene}/entry`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >
+                                        {go.gene}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a
+                                            href={`http://amigo.geneontology.org/amigo/term/${go.term}`}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {go.term}
+                                        </a>
+                                    </td>
                                     <td>{go.description}</td>
                                     <td>{go.definition}</td>
                                 </tr>
@@ -93,6 +107,7 @@ export default class ANNOT extends React.Component {
             )
         }
 
+
         let hostkegg;
         if (this.state.hkegg && this.state.hkegg.length !== 0) {
             hostkegg = (
@@ -108,12 +123,27 @@ export default class ANNOT extends React.Component {
                         {this.state.hkegg.map((go, index) => (
                             <>
                                 <tr key={index + 1}>
-                                    <td>{go.gene}</td>
-                                    <td>{go.pathway}</td>
+                                    <td>
+                                        <a
+                                        href={`https://www.uniprot.org/uniprotkb/${go.gene}/entry`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >
+                                        {go.gene}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a
+                                            href={`https://www.kegg.jp/pathway/${go.pathway}`}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {go.pathway}
+                                        </a>
+                                    </td>
                                     <td>{go.description}</td>
                                 </tr>
                             </>
-
                         ))}
                     </tbody>
                 </Table>)
@@ -141,11 +171,18 @@ export default class ANNOT extends React.Component {
                         {this.state.hlocal.map((go, index) => (
                             <>
                                 <tr key={index + 1}>
-                                    <td>{go.gene}</td>
+                                    <td>
+                                        <a
+                                        href={`https://www.uniprot.org/uniprotkb/${go.gene}/entry`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >
+                                        {go.gene}
+                                        </a>
+                                    </td>
                                     <td>{go.location}</td>
                                 </tr>
                             </>
-
                         ))}
                     </tbody>
                 </Table>)
@@ -178,7 +215,7 @@ export default class ANNOT extends React.Component {
                     <tbody>
                         {this.state.hdrugs.map((result, index) => (
                             <>
-                                <tr key={index + 1}>
+                            <tr key={index + 1}>
                                 <td>
                                     <a
                                         href={`https://www.uniprot.org/uniprotkb/${result["protein_id"]}/entry`}
@@ -187,9 +224,9 @@ export default class ANNOT extends React.Component {
                                     >
                                         {result["protein_id"]}
                                     </a>
-                                    </td>
+                                </td>
 
-                                    <td>
+                                <td>
                                     <a
                                         href={`https://go.drugbank.com/drugs/${result["drug_id"]}`}
                                         target="_blank"
@@ -197,36 +234,36 @@ export default class ANNOT extends React.Component {
                                     >
                                         {result["drug_id"]}
                                     </a>
-                                    </td>
+                                </td>
 
-                                    <td>{result["common_name"]}</td>
+                                <td>{result["common_name"]}</td>
 
-                                    <td>
+                                <td>
                                     <a href={`https://www.ncbi.nlm.nih.gov/search/all/?term=${result['gene_name']}`} target="_blank"
                                         rel="noreferrer">
                                         {result["gene_name"]}
                                     </a>
-                                    </td>
+                                </td>
 
-                                    <td>
+                                <td>
                                     <a href={`https://www.ncbi.nlm.nih.gov/search/all/?term=${result['genbank_id']}`} target="_blank"
                                             rel="noreferrer">
                                     {result["genbank_id"]}
                                     </a>
-                                    </td>
+                                </td>
 
-                                    <td>
+                                <td>
                                     <a href={`https://www.ebi.ac.uk/chembl/compound_report_card/${result['ChEMBLID']}`} target="_blank"
                                             rel="noreferrer">
                                     {result["ChEMBLID"]}
                                     </a>
-                                    </td>
+                                </td>
 
-                                    <td>{result["ChEMBL_Name"]}</td>
+                                <td>{result["ChEMBL_Name"]}</td>
 
-                                    <td>{result["ProteinType"]}</td>
-                                </tr>
-                            </>
+                                <td>{result["ProteinType"]}</td>
+                            </tr>
+                        </>
 
                         ))}
                     </tbody>
@@ -235,10 +272,11 @@ export default class ANNOT extends React.Component {
         else {
             hostdrugs = (
                 <>
-                    <h5>No drugs Found</h5>
+                    <h5>No drugs found</h5>
                 </>
             )
         }
+
 
         let hostinterpro;
         if (this.state.hinter && this.state.hinter.length !== 0) {
@@ -259,9 +297,25 @@ export default class ANNOT extends React.Component {
                         {this.state.hinter.map((go, index) => (
                             <>
                                 <tr key={index + 1}>
-                                    <td>{go['gene']}</td>
+                                    <td>
+                                        <a
+                                        href={`https://www.uniprot.org/uniprotkb/${go.gene}/entry`}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >
+                                        {go.gene}
+                                        </a>
+                                    </td>
+
                                     <td>{go['length']}</td>
-                                    <td>{go["interpro_id"]}</td>
+
+                                    <td>
+                                        <a href={`https://www.ebi.ac.uk/interpro/entry/InterPro/${go.interpro_id}/`} target="_blank"
+                                                rel="noreferrer">
+                                        {go.interpro_id}
+                                        </a>
+                                    </td>
+                                    
                                     <td>{go["sourcedb"]}</td>
                                     <td>{go["domain"]}</td>
                                     <td className="desc">{go["domain_description"]}</td>
@@ -275,7 +329,7 @@ export default class ANNOT extends React.Component {
         else {
             hostinterpro = (
                 <>
-                    <h5>No Functional Domain Found</h5>
+                    <h5>No functional domain found</h5>
                 </>
             )
         }
@@ -304,35 +358,82 @@ export default class ANNOT extends React.Component {
                     <>
                         <Divider />
                         <div className="row align-content-center">
-                            <h3>Functional Annotation of human protein: &nbsp;&nbsp;&nbsp; {hid}</h3>
+                            <h2>Functional Annotation of human protein: &nbsp; {hid}</h2>
                         </div>
+
                         <Divider />
  
                 {this.state.ishost && (
+                    
                     <div className="row justify-content-center">
-                            {/* <h5>Host protein: &nbsp;&nbsp;&nbsp; {hid} </h5>
-                            <Divider /> */}
-                            <h5><b>Gene Ontology</b></h5>
+
+                        <div className="row justify-content-center">
+                            <a className="col-md-2" href="#go"><Button type="default" shape="round" size="large">
+                                <b>Gene Ontology</b>
+                                </Button>
+                            </a>
+                        
+                            <a className="col-md-2" href="#kegg"><Button type="default" shape="round" size="large">
+                                <b>KEGG Pathways</b>
+                                </Button>
+                            </a>
+                        
+                            <a className="col-md-2" href="#localization"><Button type="default" shape="round" size="large">
+                                <b>Localization</b>
+                                </Button>
+                            </a>
+
+                            <a  className="col-md-2" href="#drugs"><Button type="default" shape="round" size="large">
+                                <b>Drug Targets</b>
+                                </Button>
+                            </a>
+
+                            <a  className="col-md-2" href="#interpro"><Button type="default" shape="round" size="large">
+                                <b>Functional Domains</b>
+                                </Button>
+                            </a>
+                        </div>
+                        <Divider />
+
+
+                            <div id="go" className="row justify-content-center annotHeader my-2">
+                                <h5><b>Gene Ontology</b></h5>
+                            </div>
                             {geneontology}
+
                             <Divider />
-                            <h5><b>KEGG Pathway</b></h5>
+                            
+                            <div id="kegg" className="row justify-content-center annotHeader my-2">
+                                <h5><b>KEGG Pathways</b></h5>
+                            </div>
                             {hostkegg}
+
                             <Divider />
-                            <h5><b>Subcellular Localization</b></h5>
+
+                            <div id="localization" className="row justify-content-center annotHeader my-2">
+                                <h5><b>Subcellular Localization</b></h5>
+                            </div>
                             {hostlocal}
+
                             <Divider />
-                            <h5><b>Drug Targets</b></h5>
+
+                            <div id="drugs" className="row justify-content-center annotHeader my-2">
+                                <h5><b>Drug Targets</b></h5>
+                            </div>
                             {hostdrugs}
+                            
                             <Divider />
-                            <h5><b>Functional Domains</b></h5>
+
+                            <div id="interpro" className="row justify-content-center annotHeader my-2">
+                                <h5><b>Functional Domains</b></h5>
+                            </div>
                             {hostinterpro}
+
                             <Divider />
                         </div>
                 )}
-                        
                     </>
                 )}
-
             </div>
         )
     }

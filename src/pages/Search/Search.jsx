@@ -117,9 +117,9 @@ export default class Search extends React.Component {
           <div className="row flex-lg-row justify-content-center g-2 mt-2">
           <Divider/>
           <p>
-            &copy; 2022 |&nbsp;{" "}
+            &copy; 2023 |&nbsp;{" "}
             <a
-              href="http://bioinfo.usu.edu"
+              href="https://kaabil.net"
               target="_blank"
               rel="noopener noreferrer"
             >
